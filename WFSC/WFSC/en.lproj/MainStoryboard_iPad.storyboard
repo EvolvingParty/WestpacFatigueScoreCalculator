@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Tj4-ws-K9R">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zz1-ip-3jg">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Tj4-ws-K9R" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eYj-uw-6NH">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HHM-G3-ci1" kind="relationship" relationship="rootViewController" id="50w-38-i7N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHP-1v-2Vn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="-8"/>
+        </scene>
+        <!--Calc View Controller - Fatigue Score Calculator-->
+        <scene sceneID="eOi-zg-9oZ">
+            <objects>
+                <viewController id="HHM-G3-ci1" customClass="Calc_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EYP-eK-S7S">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 3:" lineBreakMode="tailTruncation" minimumFontSize="10" id="GOO-TV-e3l">
+                                <rect key="frame" x="86" y="303" width="110" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-logo.png" id="gaK-CA-NJM">
+                                <rect key="frame" x="-242" y="407" width="768" height="500"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="center" id="ex3-nu-PzG" userLabel="Text View - Action">
+                                <rect key="frame" x="49" y="187" width="670" height="183"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Please enter the amount of sleep you have had in the last 24 hours." id="xxx-gI-jKn">
+                                <rect key="frame" x="86" y="97" width="413" height="125"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Enter the number of hours you have been awake since your last sleep but prior to your shift." id="kii-fK-871">
+                                <rect key="frame" x="95" y="330" width="404" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 1:" lineBreakMode="tailTruncation" minimumFontSize="10" id="F7y-IN-mUQ">
+                                <rect key="frame" x="86" y="57" width="110" height="59"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="70" id="j9n-b0-83h">
+                                <rect key="frame" x="610" y="876" width="84" height="76"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="70"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Enter the amount of sleep you had in the preceding 24 hours." id="Zka-1f-GtS">
+                                <rect key="frame" x="95" y="214" width="404" height="79"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="70" id="vmB-MB-aAX">
+                                <rect key="frame" x="489" y="864" width="84" height="76"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="70"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nTD-wA-yU0">
+                                <rect key="frame" x="268" y="630" width="233" height="36"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <state key="normal" image="Calculate light grey.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate" destination="HHM-G3-ci1" eventType="touchUpInside" id="tys-0u-Ncu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="30" id="5lH-0w-QUE">
+                                <rect key="frame" x="582" y="97" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="70" id="bSg-ow-MnT">
+                                <rect key="frame" x="342" y="855" width="84" height="76"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="70"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="30" id="VyY-2u-drh">
+                                <rect key="frame" x="582" y="214" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 2:" lineBreakMode="tailTruncation" minimumFontSize="10" id="ekn-Wu-w3f">
+                                <rect key="frame" x="86" y="186" width="119" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="30" id="zG1-gG-7K6">
+                                <rect key="frame" x="582" y="341" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Enter the length of you upcoming shift." id="DEw-4G-Ylf">
+                                <rect key="frame" x="95" y="476" width="404" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="30" id="Gsj-KT-g2n">
+                                <rect key="frame" x="582" y="459" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 4:" lineBreakMode="tailTruncation" minimumFontSize="10" id="36C-Kg-i6Z">
+                                <rect key="frame" x="86" y="453" width="95" height="28"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="80" id="xwv-Sy-UeJ" userLabel="Label - Score">
+                                <rect key="frame" x="293" y="48" width="182" height="144"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="100"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" id="rev-lO-v4e" userLabel="Text View - Tip">
+                                <rect key="frame" x="60" y="323" width="648" height="443"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="danger.png" id="UWT-zL-9Is">
+                                <rect key="frame" x="244" y="799" width="280" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="arrow.png" id="TWq-4w-21a">
+                                <rect key="frame" x="275" y="911" width="222" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="top" image="bg-bottom.png" id="WZn-Lp-wHD">
+                                <rect key="frame" x="0.0" y="1004" width="768" height="700"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" image="bg-top.png" id="vsh-hj-agd">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="700"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="32F-45-vPP">
+                                <rect key="frame" x="10" y="988" width="73" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fatigue Score Calculator" id="ufv-i7-VeT">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="O6h-5u-Oh9">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="reset" destination="HHM-G3-ci1" id="AJF-fh-LYf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <connections>
+                        <outlet property="Action" destination="ex3-nu-PzG" id="F08-Mz-xUT"/>
+                        <outlet property="Calculate" destination="nTD-wA-yU0" id="i7o-Ra-RX2"/>
+                        <outlet property="Danger" destination="UWT-zL-9Is" id="n9s-b6-ABk"/>
+                        <outlet property="Reset" destination="32F-45-vPP" id="OHi-jm-sAq"/>
+                        <outlet property="Score" destination="xwv-Sy-UeJ" id="1CD-9R-TeZ"/>
+                        <outlet property="Score2" destination="bSg-ow-MnT" id="GYb-Eh-oie"/>
+                        <outlet property="Score3" destination="vmB-MB-aAX" id="bI7-vu-oY3"/>
+                        <outlet property="Score4" destination="j9n-b0-83h" id="iYy-sV-V71"/>
+                        <outlet property="Tip" destination="rev-lO-v4e" id="bjH-uX-0kO"/>
+                        <outlet property="Txt1" destination="F7y-IN-mUQ" id="b73-Fi-lSD"/>
+                        <outlet property="Txt2" destination="xxx-gI-jKn" id="9PQ-eb-NzI"/>
+                        <outlet property="Txt3" destination="ekn-Wu-w3f" id="AlN-4r-ezq"/>
+                        <outlet property="Txt4" destination="Zka-1f-GtS" id="C1Q-Yo-rVA"/>
+                        <outlet property="Txt5" destination="GOO-TV-e3l" id="uif-gB-K6D"/>
+                        <outlet property="Txt6" destination="kii-fK-871" id="0AQ-yZ-D51"/>
+                        <outlet property="Txt7" destination="36C-Kg-i6Z" id="9vK-RL-DfC"/>
+                        <outlet property="Txt8" destination="DEw-4G-Ylf" id="1sC-ZH-BcI"/>
+                        <outlet property="arrow" destination="TWq-4w-21a" id="bjP-fz-37h"/>
+                        <outlet property="doorBottom" destination="WZn-Lp-wHD" id="Wqu-du-0rS"/>
+                        <outlet property="doorTop" destination="vsh-hj-agd" id="jbS-Ak-Uwt"/>
+                        <outlet property="logo" destination="gaK-CA-NJM" id="Kfo-zU-fSE"/>
+                        <outlet property="textField1" destination="5lH-0w-QUE" id="BLY-jY-3PY"/>
+                        <outlet property="textField2" destination="VyY-2u-drh" id="lLu-fX-a1P"/>
+                        <outlet property="textField3" destination="zG1-gG-7K6" id="bWi-qt-gtV"/>
+                        <outlet property="textField4" destination="Gsj-KT-g2n" id="ehN-HT-Kxa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJr-Fj-hST" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127" y="751"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Calculate light grey.png" width="556" height="90"/>
+        <image name="arrow.png" width="1592" height="323"/>
+        <image name="bg-bottom.png" width="768" height="700"/>
+        <image name="bg-logo.png" width="768" height="500"/>
+        <image name="bg-top.png" width="768" height="700"/>
+        <image name="danger.png" width="1036" height="524"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
