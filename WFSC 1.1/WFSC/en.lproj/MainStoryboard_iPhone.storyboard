@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="oip-Bo-Ic4">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Calc View Controller - Fatigue Score Calculator-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="Calc_ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-logo2.png" id="slG-bu-LUh">
+                                <rect key="frame" x="0.0" y="172" width="320" height="276"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="30" id="Y9Y-F6-f1d">
+                                <rect key="frame" x="230" y="101" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="30" id="jjO-Yx-U5a">
+                                <rect key="frame" x="230" y="101" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="30" id="c2u-Wg-LUa">
+                                <rect key="frame" x="230" y="101" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="30" id="Zvd-uR-lSz">
+                                <rect key="frame" x="230" y="101" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 1:" lineBreakMode="tailTruncation" minimumFontSize="10" id="udc-d9-Rza">
+                                <rect key="frame" x="22" y="80" width="57" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Please enter the amount of sleep you have had in the last 24 hours." id="qLE-3a-pqh">
+                                <rect key="frame" x="14" y="101" width="214" height="125"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 2:" lineBreakMode="tailTruncation" minimumFontSize="10" id="CPp-ac-tns">
+                                <rect key="frame" x="22" y="80" width="57" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Enter the amount of sleep you had in the preceding 24 hours." id="mI8-Pd-6Yd">
+                                <rect key="frame" x="14" y="101" width="214" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 3:" lineBreakMode="tailTruncation" minimumFontSize="10" id="bDC-DN-hbf">
+                                <rect key="frame" x="22" y="80" width="57" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Enter the number of hours you have been awake since your last sleep but prior to your shift." id="yAM-7O-H3N">
+                                <rect key="frame" x="14" y="101" width="214" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Step 4:" lineBreakMode="tailTruncation" minimumFontSize="10" id="TRm-2C-aKo">
+                                <rect key="frame" x="22" y="80" width="57" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" text="Enter the length of you upcoming shift." id="02H-MC-jAY">
+                                <rect key="frame" x="14" y="101" width="214" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="70" id="7Yf-Lf-ylT">
+                                <rect key="frame" x="118" y="396" width="84" height="76"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="70"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="70" id="BGx-D4-pDo">
+                                <rect key="frame" x="118" y="396" width="84" height="76"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="70"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="80" id="bAH-YZ-DIy" userLabel="Label - Score">
+                                <rect key="frame" x="112" y="77" width="95" height="91"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="center" id="4Lk-ML-XDN" userLabel="Text View - Action">
+                                <rect key="frame" x="10" y="202" width="299" height="187"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="70" id="4Hb-gK-V1v">
+                                <rect key="frame" x="118" y="396" width="84" height="76"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="70"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dth-1k-UU4">
+                                <rect key="frame" x="43" y="217" width="233" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="Next.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Step1" destination="2" eventType="touchUpInside" id="54G-JC-bBd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="V3d-hi-TWg">
+                                <rect key="frame" x="43" y="217" width="233" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="Next.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Step2" destination="2" eventType="touchUpInside" id="A4t-3a-FWE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Zyr-FH-3hx">
+                                <rect key="frame" x="43" y="218" width="233" height="36"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <state key="normal" image="Calculate light grey.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate" destination="2" eventType="touchUpInside" id="x4g-7K-GSS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cYD-2h-Arb">
+                                <rect key="frame" x="43" y="217" width="233" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="Next.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Step3" destination="2" eventType="touchUpInside" id="zrU-i5-vys"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="danger.png" id="1c1-BB-9or">
+                                <rect key="frame" x="19" y="318" width="280" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="arrow.png" id="nt7-vt-CEo">
+                                <rect key="frame" x="50" y="430" width="222" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="top" image="door-iphone-bottom.png" id="Otv-qI-2TZ">
+                                <rect key="frame" x="0.0" y="537" width="320" height="330"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" image="door-iphone-top.png" id="GB1-4p-Kvi">
+                                <rect key="frame" x="0.0" y="-213" width="320" height="296"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Fatigue Score Calculator" id="pqR-zc-kSA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="8oT-Dg-D80">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="reset" destination="2" id="K8w-ka-I4b"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Action" destination="4Lk-ML-XDN" id="LvN-3C-Xmt"/>
+                        <outlet property="Calculate" destination="Zyr-FH-3hx" id="OWa-ZK-EUS"/>
+                        <outlet property="Danger" destination="1c1-BB-9or" id="IIi-lj-bJl"/>
+                        <outlet property="Score" destination="bAH-YZ-DIy" id="Wtn-73-PeV"/>
+                        <outlet property="Score2" destination="7Yf-Lf-ylT" id="pp4-47-owB"/>
+                        <outlet property="Score3" destination="BGx-D4-pDo" id="Hq8-C1-zrD"/>
+                        <outlet property="Score4" destination="4Hb-gK-V1v" id="HBP-QZ-ODp"/>
+                        <outlet property="Step1Done" destination="dth-1k-UU4" id="9wO-cE-bfT"/>
+                        <outlet property="Step2Done" destination="V3d-hi-TWg" id="WKY-ha-8mL"/>
+                        <outlet property="Step3Done" destination="cYD-2h-Arb" id="DIK-lE-XKx"/>
+                        <outlet property="Txt1" destination="udc-d9-Rza" id="7me-s1-t3j"/>
+                        <outlet property="Txt2" destination="qLE-3a-pqh" id="xff-hZ-yI8"/>
+                        <outlet property="Txt3" destination="CPp-ac-tns" id="rDl-Cl-03i"/>
+                        <outlet property="Txt4" destination="mI8-Pd-6Yd" id="X3W-UT-RPl"/>
+                        <outlet property="Txt5" destination="bDC-DN-hbf" id="FW4-3L-qWF"/>
+                        <outlet property="Txt6" destination="yAM-7O-H3N" id="9Te-WZ-zIh"/>
+                        <outlet property="Txt7" destination="TRm-2C-aKo" id="a9v-LH-Ilk"/>
+                        <outlet property="Txt8" destination="02H-MC-jAY" id="ZGp-6c-8yX"/>
+                        <outlet property="arrow" destination="nt7-vt-CEo" id="p3s-Gy-KWa"/>
+                        <outlet property="doorBottom" destination="Otv-qI-2TZ" id="Ajm-jo-Nsw"/>
+                        <outlet property="doorTop" destination="GB1-4p-Kvi" id="NHQ-sL-MVZ"/>
+                        <outlet property="logo" destination="slG-bu-LUh" id="r9z-WJ-pSq"/>
+                        <outlet property="textField1" destination="Y9Y-F6-f1d" id="eM7-3t-jVb"/>
+                        <outlet property="textField2" destination="jjO-Yx-U5a" id="yXz-BF-EUz"/>
+                        <outlet property="textField3" destination="c2u-Wg-LUa" id="bP0-rn-OUR"/>
+                        <outlet property="textField4" destination="Zvd-uR-lSz" id="sf3-TS-aXY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="-11"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kbb-yX-20b">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="oip-Bo-Ic4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8UK-Rt-5dM">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="dcC-HK-k5L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dej-zK-7BT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-208" y="-11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Calculate light grey.png" width="556" height="90"/>
+        <image name="Next.png" width="555" height="91"/>
+        <image name="arrow.png" width="1592" height="323"/>
+        <image name="bg-logo2.png" width="320" height="276"/>
+        <image name="danger.png" width="1036" height="524"/>
+        <image name="door-iphone-bottom.png" width="320" height="400"/>
+        <image name="door-iphone-top.png" width="320" height="400"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
